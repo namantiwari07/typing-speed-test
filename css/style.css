@@ -1,4 +1,7 @@
-/*----------- Typography -------------------------*/
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
 body,
 button,
 input,
@@ -16,6 +19,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	letter-spacing: 3px;
 }
 
 p {
@@ -98,7 +102,9 @@ big {
 	font-size: 125%;
 }
 
-/*------------- Layout ----------------------------*/
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -106,26 +112,32 @@ body {
 }
 
 .masthead {
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     background-color: navy;
     color: white;
-	border-style: ridge;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 .masthead h1 {
-    text-align: center;
+	text-align: center;
+	font-size: 2em;
 }
 
 .intro {
     padding: 2em 2em;
-    color: rgba(0,0,0,0.8);
-	font-weight: 900;
-    background-color: rgba(139,69,19,0.5);
+    color: lavenderblush;
+	font-weight: 700;
+	background-color: rgba(139,69,19,0.9);
+	/* background-color: lightgrey; */
+	letter-spacing: 1px;
 	text-align: justify;
 }
 
-.intro p,
+
+.intro p {
+	margin: 0 auto;
+	max-width: 700px ;
+}
 .test-area {
     margin: 0 auto;
     max-width: 550px;
@@ -133,12 +145,14 @@ body {
 
 .test-area {
     margin-bottom: 4em;
-    padding: 0 2em;
+	padding: 0 2em;
+	
 }
 
 .test-wrapper {
     border: 10px solid darkgray;
-    border-radius: 15px;
+	border-radius: 15px;
+	
 }
 
 #origin-text {
@@ -158,6 +172,7 @@ body {
 	font-weight: 500;
 	text-align: center;
 }
+
 
 .test-wrapper {
     display: flex;
@@ -180,6 +195,7 @@ body {
 	border: 5px solid black;
 	padding: 10px;
 	border-radius: 20px;
+	background-color: white; 
 }
 
 #reset {
@@ -188,16 +204,15 @@ body {
     font-weight: bold;
     color: #FF4500;
     background: white ;
-    border: 10px solid #FF4500;
-	border-radius: 4px;
+    border: 5px solid #FF4500;
+	border-radius: 6px;
 }
 
 #reset:hover span{
     color: white;
     background-color: #FF4500;
-	animation-fill-mode: forwards;
-	padding-right: 25px;
-	padding-left: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 #reset span {
   cursor: pointer;
@@ -228,14 +243,19 @@ body {
 .footer {
 	text-align: center;
 	margin: auto;
-	padding: 10px;
-	color: maroon;
-	background-color: lightgrey;
+	padding: 2em;
+	color: rgba(255, 217, 0, 0.9);
+	background-color: rgb(0, 0, 0);
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 .footer a {
-	color: maroon;
+	color: rgba(255, 217, 0, 0.9);
 	font-weight: 600;
+}
+
+.footer a:hover {
+	color: whitesmoke;
 }
