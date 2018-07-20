@@ -44,12 +44,12 @@ function spellCheck() {
 	
 	if (textEntered == originText) {
 		clearInterval(interval);
-		testWrapper.style.borderColor = "#7FFF00";
+		testWrapper.style.borderColor = "#008000";
 	} else {
 		if (textEntered == originTextMatch) {
-			testWrapper.style.borderColor = "#DAA520";
+			testWrapper.style.borderColor = "#FFD700";
 		} else {
-			testWrapper.style.borderColor = "#FF0000";
+			testWrapper.style.borderColor = "#8B0000";
 		}
 	}
 	console.log(textEntered);
